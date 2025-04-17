@@ -22,7 +22,8 @@ A modern and intuitive vehicle control menu for FiveM servers, allowing players 
 
 ## Preview
 
-[Add preview images/videos here]
+![image](https://github.com/user-attachments/assets/feefaef9-31ed-4769-8758-97e7d41fb61c)
+
 
 ## Dependencies
 
