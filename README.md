@@ -69,9 +69,3 @@ For support, please join our Discord server: [Paradise Scripts](https://discord.
 ## License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
-
-## Credits
-
-- Developed by Paradise
-- UI/UX Design by Paradise Team
-- Special thanks to the FiveM community
