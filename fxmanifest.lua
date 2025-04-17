@@ -16,9 +16,9 @@ client_scripts {
     'scripting/client.lua'
 }
 
-ui_page 'web/build/index.html'
+ui_page 'build/index.html'
 
 files {
-    'web/build/index.html',
-    'web/build/**/*'
+    'build/index.html',
+    'build/**/*'
 }
