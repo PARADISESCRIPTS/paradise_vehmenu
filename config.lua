@@ -2,6 +2,7 @@ Config = {}
 
 -- Command settings
 Config.Command = 'vehmenu' -- Command to open the vehicle menu
+Config.Keybind = 'F5'
 
 -- Vehicle control settings
 Config.DoorControls = {
