@@ -293,3 +293,5 @@ RegisterNUICallback('getVehicleInfo', function(_, cb)
         seatingCapacity = seatingCapacity
     })
 end)
+
+RegisterKeyMapping(Config.Command, 'Open Vehicle Menu', 'keyboard', Config.Keybind)
