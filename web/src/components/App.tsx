@@ -152,7 +152,7 @@ const App: React.FC = () => {
   const handleControlClick = async (controlId: string) => {
     try {
       const newState = !activeControls[controlId];
-      console.log('Sending control:', controlId, newState);
+      // console.log('Sending control:', controlId, newState);
       
       const response = await fetchNui<NuiResponse>('vehicleControl', {
         controlId,
@@ -189,7 +189,7 @@ const App: React.FC = () => {
                   src={control.icon} 
                   alt={control.label} 
                   className="control-icon"
-                  style={{ width: '24px', height: '24px' }}
+                  style={{ width: '2.4vh', height: '2.4vh' }}
                 />
                 <div className="hex-label">{control.label}</div>
               </div>

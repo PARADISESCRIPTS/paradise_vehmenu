@@ -21,7 +21,7 @@ body, html {
 
 .vehicle-controls {
   position: fixed;
-  bottom: 0px;
+  bottom: 0vh;
   left: 54%;
   transform: translateX(-60%);
   width: auto;
@@ -30,7 +30,7 @@ body, html {
   align-items: center;
   justify-content: flex-end;
   background-color: transparent;
-  padding: 15px;
+  padding: 1.5vh;
   font-family: 'Oswald', sans-serif;
   transition: transform 0.5s ease-in-out;
 }
@@ -45,19 +45,19 @@ body, html {
 
 .dev-controls {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 2vh;
+  right: 2vh;
   z-index: 1000;
   display: flex;
-  gap: 10px;
+  gap: 1vh;
 }
 
 .dev-button {
-  padding: 6px 12px;
+  padding: 0.6vh 1.2vh;
   background-color: rgba(64, 156, 255, 0.8);
   border: 2px solid rgba(64, 156, 255, 0.9);
   color: white;
-  border-radius: 4px;
+  border-radius: 0.4vh;
   cursor: pointer;
   font-family: 'Oswald', sans-serif;
   transition: all 0.3s ease;
@@ -66,63 +66,63 @@ body, html {
 .dev-button:hover {
   background-color: rgba(64, 156, 255, 0.9);
   transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(64, 156, 255, 0.4);
+  box-shadow: 0 0 1.5vh rgba(64, 156, 255, 0.4);
 }
 
 .engine-start {
-  margin-bottom: -58px;
-  margin-left: 47px;
+  margin-bottom: -5.8vh;
+  margin-left: 4.7vh;
 }
 
 .controls-divider {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 10px auto 20px;
+  margin: 1vh auto 2vh;
   position: relative;
 }
 
 .divider-left {
   position: absolute;
-  left: -20px;
+  left: -2vh;
   width: 49%;
-  height: 15px;
+  height: 1.5vh;
   border-top: 2px solid rgba(64, 156, 255, 0.7);
   border-left: 2px solid rgba(64, 156, 255, 0.7);
   border-bottom: 0;
   border-right: 0;
-  border-top-left-radius: 8px;
+  border-top-left-radius: 0.8vh;
   background-color: transparent;
 }
 
 .divider-right {
   position: absolute;
-  right: -65px;
+  right: -6.5vh;
   width: 49%;
-  height: 15px;
+  height: 1.5vh;
   border-top: 2px solid rgba(64, 156, 255, 0.7);
   border-right: 2px solid rgba(64, 156, 255, 0.7);
   border-bottom: 0;
   border-left: 0;
-  border-top-right-radius: 8px;
+  border-top-right-radius: 0.8vh;
   background-color: transparent;
 }
 
 .controls-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
-  max-width: 800px;
+  gap: 0.8vh;
+  max-width: 80vh;
   width: 100%;
 }
 
 .control-section {
   background-color: rgba(13, 26, 38, 0.85);
-  border-radius: 6px;
-  padding: 12px;
-  min-width: 180px;
-  min-height: 180px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 0.6vh;
+  padding: 1.2vh;
+  min-width: 18vh;
+  min-height: 18vh;
+  box-shadow: 0 0.4vh 0.6vh rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -153,9 +153,9 @@ body, html {
 
 .section-title {
   color: #409cff;
-  font-size: 12px;
+  font-size: 1.2vh;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 1.2vh;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1.2px;
@@ -165,7 +165,7 @@ body, html {
 .hex-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
+  gap: 1.2vh;
   justify-items: center;
   align-items: center;
   height: 100%;
@@ -174,9 +174,9 @@ body, html {
 .hex-grid-windows {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
+  gap: 1.5vh;
   justify-items: center;
-  margin: 10px;
+  margin: 1vh;
 }
 
 .hex-grid-windows .hex-button {
@@ -204,8 +204,8 @@ body, html {
 }
 
 .hex-button {
-  width: 65px;
-  height: 75px;
+  width: 6.5vh;
+  height: 7.5vh;
   border: none;
   position: relative;
   cursor: pointer;
@@ -221,7 +221,7 @@ body, html {
 .hex-button:hover {
   background-color: rgba(64, 156, 255, 0.3);
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(64, 156, 255, 0.3);
+  box-shadow: 0 0 2vh rgba(64, 156, 255, 0.3);
 }
 
 .hex-button:hover::before {
@@ -230,7 +230,7 @@ body, html {
 
 .hex-button.active {
   transform: scale(0.95);
-  box-shadow: 0 0 20px rgba(64, 156, 255, 0.5);
+  box-shadow: 0 0 2vh rgba(64, 156, 255, 0.5);
   background-color: rgba(64, 156, 255, 0.4);
 }
 
@@ -274,14 +274,14 @@ body, html {
 }
 
 .control-icon {
-  width: 20px !important;
-  height: 20px !important;
-  margin-bottom: 4px;
+  width: 2vh !important;
+  height: 2vh !important;
+  margin-bottom: 0.4vh;
 }
 
 .hex-icon {
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 2.4vh;
+  margin-bottom: 1vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,13 +289,13 @@ body, html {
 }
 
 .hex-icon i {
-  font-size: 22px;
+  font-size: 2.2vh;
   transition: all 0.3s ease;
 }
 
 .car-door-icon {
-  width: 24px;
-  height: 24px;
+  width: 2.4vh;
+  height: 2.4vh;
   display: inline-block;
   background-image: url('../assets/left-door.png');
   background-size: contain;
@@ -340,34 +340,34 @@ body, html {
 }
 
 .hex-label {
-  font-size: 10px;
+  font-size: 1vh;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.4px;
 }
 
 .hex-button.large {
-  width: 90px;
-  height: 100px;
-  margin-bottom: 12px;
+  width: 9vh;
+  height: 10vh;
+  margin-bottom: 1.2vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(64, 156, 255, 0.8);
   border: 2px solid rgba(64, 156, 255, 0.9);
-  box-shadow: 0 0 25px rgba(64, 156, 255, 0.4);
+  box-shadow: 0 0 2.5vh rgba(64, 156, 255, 0.4);
 }
 
 .hex-button.large:hover {
   background-color: rgba(64, 156, 255, 0.9);
   transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(64, 156, 255, 0.6);
+  box-shadow: 0 0 3vh rgba(64, 156, 255, 0.6);
 }
 
 .hex-button.large.active {
   background-color: rgba(64, 156, 255, 1);
   transform: scale(0.95);
-  box-shadow: 0 0 35px rgba(64, 156, 255, 0.8);
+  box-shadow: 0 0 3.5vh rgba(64, 156, 255, 0.8);
 }
 
 .hex-button.large .hex-content {
@@ -376,8 +376,8 @@ body, html {
 }
 
 .hex-button.large .hex-label {
-  font-size: 12px;
-  margin-bottom: 2px;
+  font-size: 1.2vh;
+  margin-bottom: 0.2vh;
   font-weight: 600;
   letter-spacing: 0.6px;
   text-align: center;
@@ -385,7 +385,7 @@ body, html {
 }
 
 .hex-sublabel {
-  font-size: 10px;
+  font-size: 1vh;
   opacity: 0.8;
   font-weight: 400;
   letter-spacing: 0.4px;
