@@ -50,10 +50,12 @@ Config.KeyDistance = 5.0 -- Maximum distance to give keys to another player
 Config.Notifications = {
     engineStarted = 'Engine started successfully',
     engineFailed = 'Failed to start engine',
+    engineTurnedOff = 'Engine turned off',
     radioOn = 'Radio turned on',
     radioOff = 'Radio turned off',
     keysGiven = 'Keys given to player',
     keysReceived = 'You received vehicle keys',
     seatOccupied = 'This seat is occupied!',
-    seatCooldown = 'Please wait before switching seats again'
+    seatCooldown = 'Please wait before switching seats again',
+    notInVehicle = 'You must be in a vehicle to use this command'
 } 

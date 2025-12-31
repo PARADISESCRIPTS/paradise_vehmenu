@@ -87,6 +87,25 @@ local function handleEngineControl(state)
   if not vehicle or vehicle == 0 then return end
 
   if state then
+    -- Check if engine can start (simple health-based check)
+    local vehicleHealth = GetVehicleEngineHealth(vehicle)
+    local failureChance = 0
+    
+    -- Calculate failure chance based on vehicle health (0-1000 scale)
+    if vehicleHealth < 300 then
+      failureChance = math.min(50, (300 - vehicleHealth) / 300 * 50) -- Max 50% failure chance
+    end
+    
+    -- Random chance for engine failure
+    if math.random(100) <= failureChance then
+      lib.notify({
+        title = 'Vehicle',
+        description = Config.Notifications.engineFailed,
+        type = 'error'
+      })
+      return
+    end
+    
     SetVehicleEngineOn(vehicle, true, true, true)
     if Config.EngineStartSound then
       PlaySoundFrontend(-1, "Remote_Control_Fob", "PI_Menu_Sounds", true)
@@ -100,7 +119,7 @@ local function handleEngineControl(state)
     SetVehicleEngineOn(vehicle, false, true, true)
     lib.notify({
       title = 'Vehicle',
-      description = 'Engine turned off',
+      description = Config.Notifications.engineTurnedOff,
       type = 'inform'
     })
   end
@@ -183,7 +202,7 @@ RegisterCommand(Config.Command, function()
   if not isPlayerInVehicle() then
     lib.notify({
       title = 'Vehicle',
-      description = 'You must be in a vehicle to use this command',
+      description = Config.Notifications.notInVehicle,
       type = 'error'
     })
     return
@@ -196,7 +215,7 @@ RegisterCommand(Config.RadioCommand, function()
   if not isPlayerInVehicle() then
     lib.notify({
       title = 'Vehicle',
-      description = 'You must be in a vehicle to use this command',
+      description = Config.Notifications.notInVehicle,
       type = 'error'
     })
     return
@@ -217,7 +236,7 @@ RegisterCommand(Config.KeyCommand, function()
   if not isPlayerInVehicle() then
     lib.notify({
       title = 'Vehicle',
-      description = 'You must be in a vehicle to use this command',
+      description = Config.Notifications.notInVehicle,
       type = 'error'
     })
     return
